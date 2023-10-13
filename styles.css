@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    font-size: 10vmin;
+    color: lightsalmon;
+    font-family: monospace;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 15vmin);
+    grid-template-rows: repeat(3, 15vmin);
+    gap: 2vmin;
+}
+
+#board > div {
+    border: darkgrey solid 5px;
+    border-radius: 5%;;
+    background-color: lightgreen;
+    font-size: 10vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board > div:hover {
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
+button {
+    text-transform: uppercase;
+    background-color: lightsalmon;
+    border-radius: 2vmin;
+    font-size: 4vmin;
+    font-family: Georgia;
+    margin: 5vmin;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: lightsalmon;
+    text-decoration: underline;
+}
